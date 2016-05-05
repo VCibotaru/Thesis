@@ -1,0 +1,70 @@
+\usepackage{xspace}
+\usepackage[inline]{enumitem}
+
+%---------------------------------------------------------------
+
+% general use length
+\newlength\mlength
+\newlength\plotheight
+\newlength\plotwidth
+
+% general use counter
+\newcounter{mcounter}
+
+% lengths to store images height and width
+\newlength\imgheight
+\newlength\imgwidth
+
+\newenvironment{mtikzonimage}[2]
+{%
+    \setlength\imgwidth{#1}
+    \settoheight\imgheight{\includegraphics[width=#1]{#2}}
+    \begin{tikzonimage}[width=#1]{#2}[inner sep = 0pt]%
+}
+{%
+    \end{tikzonimage}%            
+}
+
+\newenvironment{cropimg}[4]
+{%                
+    \settoheight\mlength{\includegraphics[width=#3]{#4}}
+    
+    \begin{mtikzonimage}{#1}{#2}
+    
+        \node[above right] at (0.6pt, \imgheight - \mlength - 0.2pt) 
+        {\includegraphics[width=#3]{#4}};
+        
+        \draw[color=red, thick] (0.6pt,\imgheight-\mlength - 0.2pt) rectangle (#3 + 0.6pt,\imgheight - 0.2pt);%
+}
+{%
+    \end{mtikzonimage}%
+}
+        
+% metrics
+\newcommand{\PSNR}{PSNR\xspace}
+\newcommand{\AuROC}{AUROC\xspace}
+\newcommand{\SSIM}{SSIM\xspace}
+
+% \naive command
+\newcommand{\naive}{na\"{\i}ve\xspace}
+
+% place figure with no content
+\newcommand{\nullfigure}{\fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}}
+
+% mark text to rewrite
+\newcommand{\todo}[1]{\textcolor{orange}{... #1 ...}}
+
+%---------------------------------------------------------------
+% conferences
+\newcommand{\CVPR} {Computer Vision and Pattern Recognition (CVPR)}
+\newcommand{\TPAMI}{IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)}
+\newcommand{\TIP}  {IEEE Transactions on Image Processing (TIP)}
+\newcommand{\NIPS} {Advances in Neural Information Processing Systems (NIPS)}
+\newcommand{\ACCV} {Asian Conference on Computer Vision (ACCV)}
+\newcommand{\ICCV} {International Conference on Computer Vision (ICCV)}
+\newcommand{\ECCV} {European Conference on Computer Vision (ECCV)}
+\newcommand{\ICIP} {International Conference on Image Processing (ICIP)}
+\newcommand{\TOG}  {ACM Transactions on Graphics (TOG)}
+\newcommand{\QoMEX}{International Workshop on Quality of Multimedia Experience (QoMEX)}
+\newcommand{\ICME} {International Conference on Multimedia and Expo (ICME)}
+%---------------------------------------------------------------
