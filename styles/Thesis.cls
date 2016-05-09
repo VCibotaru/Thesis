@@ -24,6 +24,10 @@
 % for colored listings
 \usepackage{listings}
 \usepackage{color}
+
+% for tables
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{booktabs}
  
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
