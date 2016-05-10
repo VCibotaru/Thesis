@@ -129,9 +129,9 @@
 
 	\bigskip
 	\textbf{Динамическая типизация:}
-	\begin{lstlisting}[language=C]
+	\begin{lstlisting}
 		var a = 1;
-		a = a + 'str';
+		a = a + 'foo';
 		var b = typeof a; // b = 'string'
 		if (b === 'string') {
 			console.log('a is string');
@@ -143,13 +143,13 @@
 
 	\bigskip
 	\textbf{Динамическое исполнение кода:}
-	\begin{lstlisting}[language=C]
+	\begin{lstlisting}
 		eval(atob("YWxlcnQoMSk7")); // эквивалентно alert(1);
 	\end{lstlisting}
 
 	\bigskip
 	\textbf{Вызов функций от произвольного числа аргументов:}
-	\begin{lstlisting}[language=C]
+	\begin{lstlisting}
 		var f = function(a) {
 			console.log('a is ' + a + ' ;arguments are: ' + arguments);
 			
@@ -161,7 +161,7 @@
 
 	\bigskip
 	\textbf{Прототипное наследование:}
-	\begin{lstlisting}[language=C]
+	\begin{lstlisting}
 		var Number = function() {
 			this.num = 1;
 		}
@@ -175,7 +175,7 @@
 
 	\bigskip
 	\textbf{Зависимость значения указателя this от контекста выполнения:}
-	\begin{lstlisting}[language=C]
+	\begin{lstlisting}
 		var obj = {
 			message: 'Hello World!'
 			sayHello: function() {
