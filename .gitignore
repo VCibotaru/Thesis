@@ -3,6 +3,8 @@
 *.aux
 *.toc
 *.sublime-*
+*.bbl
+*.blg
 makefile
 images/*
 bibstyles/*

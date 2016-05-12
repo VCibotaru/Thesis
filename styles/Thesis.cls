@@ -28,31 +28,6 @@
 % for tables
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{booktabs}
- 
-% \definecolor{codegreen}{rgb}{0,0.6,0}
-% \definecolor{codegray}{rgb}{0.5,0.5,0.5}
-% \definecolor{codepurple}{rgb}{0.58,0,0.82}
-% \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
- 
-% \lstdefinestyle{mystyle}{
-%     backgroundcolor=\color{backcolour},   
-%     commentstyle=\color{codegreen},
-%     keywordstyle=\color{magenta},
-%     numberstyle=\tiny\color{codegray},
-%     stringstyle=\color{codepurple},
-%     basicstyle=\footnotesize,
-%     breakatwhitespace=false,         
-%     breaklines=true,                 
-%     captionpos=b,                    
-%     keepspaces=true,                 
-%     numbers=left,                    
-%     numbersep=5pt,                  
-%     showspaces=false,                
-%     showstringspaces=false,
-%     showtabs=false,                  
-%     tabsize=2
-% }
-%\lstset{style=mystyle}
 
 
 \definecolor{lightgray}{rgb}{.9,.9,.9}
@@ -90,6 +65,8 @@
    showtabs=false,
    captionpos=b
 }
+
+\renewcommand{\lstlistingname}{Листинг}% Listing -> Algorithm
  
 
 % end for colored
@@ -136,8 +113,8 @@
 \usepackage[pdfpagemode={UseOutlines}, bookmarks=true,
             bookmarksopen=true, bookmarksopenlevel = 0,
             bookmarksnumbered = true, hypertexnames = false,
-            colorlinks, linkcolor = {green!90!black},
-            citecolor = {green!90!black}, urlcolor = {blue},
+            colorlinks, linkcolor = {black},
+            citecolor = {blue}, urlcolor = {blue},
             pdfstartview = {FitV}, breaklinks=true]{hyperref}
             
 \usepackage{polyglossia}                                     % multiple languages
