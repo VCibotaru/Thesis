@@ -14,47 +14,50 @@ Database file #1: chapters/Bibliography.bib
 Warning--empty journal in miller
 Warning--empty year in miller
 Warning--empty booktitle in vogt
+Warning--empty journal in hardekopf
+Warning--empty year in hardekopf
+Warning--empty journal in rewriting
 
 Done.
-You've used 24 entries,
+You've used 30 entries,
             4185 wiz_defined-function locations,
-            911 strings with 9712 characters,
-and the built_in function-call counts, 7051 in all, are:
-= -- 423
-> -- 69
+            934 strings with 10540 characters,
+and the built_in function-call counts, 9228 in all, are:
+= -- 573
+> -- 122
 < -- 0
-+ -- 42
-- -- 12
-* -- 192
-:= -- 1177
-add.period$ -- 31
-call.type$ -- 24
-change.case$ -- 23
++ -- 66
+- -- 24
+* -- 275
+:= -- 1544
+add.period$ -- 42
+call.type$ -- 30
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 649
-empty$ -- 852
-format.name$ -- 15
-if$ -- 1534
+cite$ -- 36
+duplicate$ -- 848
+empty$ -- 1094
+format.name$ -- 31
+if$ -- 2019
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 149
-newline$ -- 137
-num.names$ -- 6
-pop$ -- 593
+int.to.str$ -- 30
+missing$ -- 185
+newline$ -- 153
+num.names$ -- 13
+pop$ -- 711
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 511
+skip$ -- 681
 stack$ -- 0
-substring$ -- 3
-swap$ -- 276
+substring$ -- 7
+swap$ -- 372
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 24
-warning$ -- 3
-while$ -- 6
-width$ -- 26
-write$ -- 215
-(There were 3 warnings)
+type$ -- 30
+warning$ -- 6
+while$ -- 12
+width$ -- 32
+write$ -- 255
+(There were 6 warnings)

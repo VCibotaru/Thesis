@@ -79,11 +79,8 @@ Richards, Lebresne, Burg, and Vitek, “An analysis of the dynamic behavior of
   javascript programs,” \emph{ACM Sigplan Notices}, 2010.
 
 \bibitem{miller}
-\BIBentryALTinterwordspacing
 Miller and Sandhu, “Taintsniffer: A robust dynamic taint tracking system for
-  a homogenous web browsing environment.” [HTML]
-  (\url{https://courses.cs.washington.edu/courses/cse501/10au/TaintSNIFFER.pdf})
-\BIBentrySTDinterwordspacing
+  a homogenous web browsing environment.”
 
 \bibitem{dom}
 \BIBentryALTinterwordspacing
@@ -101,6 +98,11 @@ M.~Heiderich. In the dom no one will hear your scream. [HTML]
   (\url{http://www.slideshare.net/x00mario/in-the-dom-no-one-will-hear-you-scream})
 \BIBentrySTDinterwordspacing
 
+\bibitem{comparch}
+Patterson and Hennessy, \emph{Computer Architecture: A Quantitative
+  Approach}.\hskip 1em plus 0.5em minus 0.4em\relax Morgan Kaufman Publishers,
+  1990.
+
 \bibitem{vogt}
 Vogt, “Cross site scripting prevention with dynamic data tainting and
   static.”\hskip 1em plus 0.5em minus 0.4em\relax NDSS, 2007.
@@ -110,6 +112,20 @@ Vogt, “Cross site scripting prevention with dynamic data tainting and
 Stefano, Heiderich, and Braun. Dom xss test cases wiki cheatsheet project.
   [HTML] (\url{https://code.google.com/p/domxsswiki/Introduction})
 \BIBentrySTDinterwordspacing
+
+\bibitem{hardekopf}
+Hardekopf, “Static analysis of javascript: Insights and challenges.”
+
+\bibitem{jensen}
+Jensen, Madsen, and Moller, “Modeling the html dom and browser api in static
+  analysis of javascript web applications,” \emph{ESEC/FSE '11 Proceedings of
+  the 19th ACM SIGSOFT symposium and the 13th European conference on
+  Foundations of software engineering}, 2011.
+
+\bibitem{taint}
+I.~S. on~Security and Privacy, Eds., \emph{All You Ever Wanted to Know About
+  Dynamic Taint Analysis and Forward Symbolic Execution (but might have been
+  afraid to ask)}, 2010.
 
 \bibitem{spidermonkey}
 \BIBentryALTinterwordspacing
@@ -138,6 +154,15 @@ Mozilla firefox debugger-api. [HTML]
 Ecmascript 6 proxy. [HTML]
   (\url{https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Proxy})
 \BIBentrySTDinterwordspacing
+
+\bibitem{rewriting}
+Jang, Jhala, and Lerner, “Rewriting-based dynamic information flow for
+  javascript,” 2010.
+
+\bibitem{rewriting2}
+Xiao, “Preventing client side xss with rewrite based dynamic information
+  flow,” \emph{Parallel Architectures, Algorithms and Programming (PAAP),
+  2014 Sixth International Symposium}, 2014.
 
 \bibitem{esprima}
 \BIBentryALTinterwordspacing

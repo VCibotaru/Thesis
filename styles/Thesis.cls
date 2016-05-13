@@ -44,7 +44,7 @@
   sensitive=false,
   comment=[l]{//},
   morecomment=[s]{/*}{*/},
-  commentstyle=\color{lightgreen}\ttfamily,
+  commentstyle=\color{black}\ttfamily,
   stringstyle=\color{red}\ttfamily,
   morestring=[b]',
   morestring=[b]"
@@ -63,7 +63,8 @@
    tabsize=2,
    breaklines=true,
    showtabs=false,
-   captionpos=b
+   captionpos=b,
+   escapeinside=§§
 }
 
 \renewcommand{\lstlistingname}{Листинг}% Listing -> Algorithm

@@ -11,7 +11,9 @@
 \begin{lstlisting}[caption=пример недостатка DOM Clobbering]
 	<form name="form_name">
 	<script>
-		var form = document.form_name; // points to <form name="form_name">
+		var form = document.form_name; 
+		// form §указывает на элемент§
+		// <form name="form_name">
 	</script>
 \end{lstlisting}
 \bigskip
@@ -41,7 +43,10 @@
 \begin{lstlisting}[caption=вызов ошибки]
 	<form name="querySelector">
 	<script>
-		var element = document.querySelector("a"); // error: document.querySelector points to <form name=“querySelector”
+		var element = document.querySelector("a"); 
+		// §ошибка§: document.querySelector 
+		// §указывает на элемент§
+		// <form name="querySelector">
 	</script>
 \end{lstlisting}
 \bigskip
