@@ -127,9 +127,9 @@
 	
 
 	\begin{itemize}
-		\item get: событие для операций \textit{tainted.x} и \textit{tainted['x']}
-		\item set: событие для операций \textit{tainted.x = y} и \textit{tainted['x'] = y}
-		\item apply: событие для операции \textit{tainted(arguments)}
+		\item get: событие для операций \textit{tainted.x} и \textit{tainted['x']}.
+		\item set: событие для операций \textit{tainted.x = y} и \textit{tainted['x'] = y}.
+		\item apply: событие для операции \textit{tainted(arguments)}.
 	\end{itemize}
 
 
@@ -137,10 +137,10 @@
 	
 
 	\begin{itemize}
-		\item Присваивание с помеченной правой частью
-		\item Доступ к свойству помеченного объекта
-		\item Вызов функций с помеченными аргументами
-		\item Вызов помеченных функций от любых аргументов
+		\item Присваивание с помеченной правой частью.
+		\item Доступ к свойству помеченного объекта.
+		\item Вызов функций с помеченными аргументами.
+		\item Вызов помеченных функций от любых аргументов.
 	\end{itemize}
 
 
@@ -151,8 +151,8 @@
 
 
 	\begin{itemize}
-		\item Proxy объект нельзя обернуть вокруг примитивных значений (string, number, boolean)
-		\item Proxy объект обязан возвращать то же значение для неконфигурируемых и защищенных от записи свойств (non-writable non-configurable property)
+		\item Proxy объект нельзя обернуть вокруг примитивных значений (string, number, boolean).
+		\item Proxy объект обязан возвращать то же значение для неконфигурируемых и защищенных от записи свойств (non-writable non-configurable property).
 		\item Некоторые объекты из DOM (например, \textit{document.body}) нельзя заменить на Proxy.
 	\end{itemize}
 
@@ -265,9 +265,9 @@
 
 
 \begin{enumerate}
-	\item Построить по данному коду его представление в виде АСТ (Абстрактного Синтаксического Дерева).
+	\item Построить по данному коду его представление в виде АСД (Абстрактного Синтаксического Дерева).
 	\item Обойти дерево в глубину, преобразуя необходимые узлы.
-	\item По полученному АСТ сгенерировать новый код.
+	\item По полученному АСД сгенерировать новый код.
 \end{enumerate}
 
 
@@ -279,7 +279,7 @@
 \end{lstlisting}
 
 
-По данному коду будет построено следующее АСТ:
+По данному коду будет построено следующее АСД:
 
 \bigskip
 \begin{lstlisting}
@@ -319,7 +319,7 @@
 \end{lstlisting}
 
 
-После преобразований будет получено следующее АСТ:
+После преобразований будет получено следующее АСД:
 
 \bigskip
 \begin{lstlisting}
@@ -364,7 +364,7 @@
 \end{lstlisting}
 
 
-По полученному АСТ будет сгенерирован следующий код:
+По полученному АСД будет сгенерирован следующий код:
 
 \bigskip
 \begin{lstlisting}
@@ -375,8 +375,8 @@
 Реализация аппарата использует следующие библиотеки:
 
 \begin{itemize}
-	\item Построение АСТ - esprima \cite{esprima}
-	\item Обход АСТ - estraverse \cite{estraverse}
+	\item Построение АСД - esprima \cite{esprima}
+	\item Обход АСД - estraverse \cite{estraverse}
 	\item Генерация кода -  escodegen \cite{escodegen}
 \end{itemize}
 
